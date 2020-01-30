@@ -8,6 +8,23 @@
     android:paddingRight="16dp"
     tools:context=".Main2Activity">
 
+    <Button
+        android:id="@+id/botaocupom"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:background="#ba000d"
+        android:gravity="center"
+        android:text="ENTRAR"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="onClick"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="380dp"
@@ -20,17 +37,25 @@
         android:paddingRight="16dp"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cel" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/celular" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="43dp"
 
-        android:text="TextView"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="232dp"
+        android:text="Insira o cupom"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="373dp" />
+        app:layout_constraintBottom_toTopOf="@+id/botaocupom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
